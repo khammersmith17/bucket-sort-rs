@@ -4,3 +4,5 @@ This is just a toy naive implementation of a distributed bucket sort algorithm t
 Also implemented a barrier type.
 
 Very naive, it will almost certainly perform worse that regular sort on small to medium size datasets and does not cover edge small edges cases (assumes relative uniform distributions).
+
+A basic benchmark on 10 million i32 integers clocks the disrtibuted bucket sort at ~2 seconds and built in sort at ~5 seconds, of course with paying the cost of copying the entire Vec.
